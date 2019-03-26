@@ -1,7 +1,10 @@
-.repository
-    span.go-back  
+.repository {
+    span.go-back {
         font-size: .8rem;
         font-weight: bold;
         cursor: pointer;
-    header
+    }
+    header {
         margin-top: 2rem;
+    }
+}

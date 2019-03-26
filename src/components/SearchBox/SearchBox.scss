@@ -1,6 +1,8 @@
-.search-box
+@import '../../style/config';
+
+.search-box {
     margin: 1rem 0;
-    input
+    input {
         border: .1rem solid $dark-grey;
         color: $darker-grey;
         border-radius: .2rem;
@@ -8,7 +10,7 @@
         width: calc(90% - 1rem);
         display: inline-block;
         margin-right: .5rem;
-        &[type="submit"]
+        &[type="submit"] {
             background-color: $white;
             text-transform: uppercase;
             color: $black;
@@ -19,13 +21,20 @@
             margin-left: .5rem;
             margin-right: 0;
             width: 10%;
-            &:hover
+            &:hover {
                 border-bottom: .1rem solid $dark-grey;
                 margin-top: .1rem;
-    .result-informations
-        padding: 1rem 0
-        p
-            float: left
-        .clear-filters
+            }
+        }
+    }
+    .result-informations {
+        padding: 1rem 0;
+        p {
+            float: left;
+        }
+        .clear-filters {
             float: right;
             color: $darker-grey;
+        }
+    }
+}

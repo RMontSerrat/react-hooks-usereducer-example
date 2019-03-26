@@ -1,9 +1,10 @@
 import React from 'react';
+import './SearchBox.scss';
 
-const SearchBox = ({ query, onSubmit, onClear }) =>
+const SearchBox = ({ query, onSubmit, onClear }) => (
   <div className="search-box">
       <form onSubmit={onSubmit}>
-          <input type="text" name="users" id="searchUsers" placeholder="Buscar usuário" value={this.props.query} readOnly={this.props.query} required />
+          <input type="text" name="q" id="searchUsers" placeholder="Buscar usuário" value={query} readOnly={query} required />
           <input type="submit" value="Enviar" />
       </form>
       {query && 
@@ -13,5 +14,6 @@ const SearchBox = ({ query, onSubmit, onClear }) =>
         </div>
       }
   </div>
+)
 
 export default SearchBox;
