@@ -1,0 +1,29 @@
+@import '../../style/config';
+
+.User {
+    padding: 10px 0;
+    border-bottom: 1px solid $light-grey;
+    width: 100%;
+    color: $darker-grey;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .avatar {
+        width: 30px;
+        height: 30px;
+        margin: 0;
+    }
+    .informations {
+        padding-left: 10px;
+        margin: 0;
+        p {
+            color: $dark-grey;
+        }
+    }
+    img {
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+    }
+}
