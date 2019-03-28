@@ -1,15 +1,16 @@
-import React, { useEffect, useReducer, createContext, useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { urlGithub } from '../../config';
 import './Home.scss';
-import { StoreContext } from '../../components/Container/StoreContainer';
+import { 
+  StoreContext,
+  START_RESULTUSERS, 
+  SUCCESS_RESULTUSERS,
+  ERROR_RESULTUSERS 
+} from '../../store';
 import Container from '../../components/Container/Container';
 import List from '../../components/List/List';
 import User from '../../components/User/User';
 import Loading from '../../components/Loading/Loading';
-
-const START_RESULTUSERS = 'startResultUsers';
-const SUCCESS_RESULTUSERS = 'successResultUsers';
-const ERROR_RESULTUSERS = 'errorResultUsers';
 
 const Home = ({ location }) => {
   const { state: { users }, dispatch } = useContext(StoreContext);
@@ -31,11 +32,15 @@ const Home = ({ location }) => {
     }
   }
 
+  const getTermSearch = () => location.search ? location.search.split("?q=")[1] : null;
+
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [location.search]);
+
   return (
     <Container>
+      <h4>Mostrando resultado de busca para <b>"{getTermSearch()}"</b></h4>
       {users.loading ? <Loading /> : (
         <List>
           {users.data.map(item => (

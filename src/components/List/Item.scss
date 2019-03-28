@@ -1,0 +1,18 @@
+@import '../../style/config';
+
+.Item {
+  padding: 10px 0;
+  border-bottom: .1rem solid $light-grey;
+  width: 100%;
+  strong {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0;
+      color: $darker-grey;
+  }
+  p {
+      font-size: 14px;
+      padding-top: 5px;
+      color: $dark-grey;
+  }
+}

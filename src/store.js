@@ -1,11 +1,11 @@
 import React, { useReducer, createContext } from 'react';
 
-const START_RESULTUSERS = 'startResultUsers';
-const SUCCESS_RESULTUSERS = 'successResultUsers';
-const ERROR_RESULTUSERS = 'errorResultUsers';
-const START_RESULT_REPOSITORIES = 'startResultRepositories';
-const SUCCESS_RESULT_REPOSITORIES = 'successResultRepositories';
-const ERROR_RESULT_REPOSITORIES = 'errorResultRepositories';
+export const START_RESULTUSERS = 'startResultUsers';
+export const SUCCESS_RESULTUSERS = 'successResultUsers';
+export const ERROR_RESULTUSERS = 'errorResultUsers';
+export const START_RESULT_REPOSITORIES = 'startResultRepositories';
+export const SUCCESS_RESULT_REPOSITORIES = 'successResultRepositories';
+export const ERROR_RESULT_REPOSITORIES = 'errorResultRepositories';
 
 const initialState = {
   repositories: {

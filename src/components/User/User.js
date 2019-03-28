@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 import './User.scss';
 
 const User = ({ login, avatarUrl, id }) => 
-  <li className="User">
-    <Link to={`/user/${login}`}>
+  <Link to={`/user/${login}`} className="User">
+    <div>
       <img src={avatarUrl} className="avatar" alt={`avatar - ${login}`} />
       <div className="informations">
-        <h3>{login}</h3>
+        <strong>{login}</strong>
         <p>ID: {id}</p>
       </div>
-    </Link>
-  </li>
+    </div>
+  </Link>
 
 export default User;

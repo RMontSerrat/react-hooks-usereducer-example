@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Repositories from './pages/Repositories/Repositories'
-import { StoreContainer } from './components/Container/StoreContainer';
+import { StoreContainer } from './store';
 
 const App = () =>
   <Router>
