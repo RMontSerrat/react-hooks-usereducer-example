@@ -15,7 +15,7 @@ const Container = ({ children, onSubmit, history }) => {
   }
   
   return (
-    <div className="home">
+    <div className="Container">
       <header>
         <h3>Encontre repositórios por usuários no Github</h3>
       </header>

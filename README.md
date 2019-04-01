@@ -4,13 +4,13 @@
 
 ## Usage
 
-Install server and client dependencies
+Install dependencies
 
 ```
 yarn install
 ```
 
-To start the server and client at the same time (from the root of the project)
+Running project
 
 ```
 yarn start
